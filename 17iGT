@@ -7,9 +7,6 @@ from core.iGT import iGT
 
 choice = 0
 
-if sys.version_info < (3, 0):
-    input = raw_input
-
 
 def banner():
     print ('''
