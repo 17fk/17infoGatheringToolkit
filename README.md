@@ -40,7 +40,7 @@
 
 ### Usage
 
-```
+```bash
 git clone https://github.com/17fk/17infoGatheringTools.git
 
 cd 17infoGatheringTools
