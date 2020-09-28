@@ -21,8 +21,8 @@
 
 ### What you might need
 
-- An account at https://shodan.io	please take a look at **honeypot.py** to config the key
-- An account at https://larger.io       please take a look at **detectTech.py** to config the key
+- An account at https://shodan.io     take a look at **honeypot.py** and config api_key accordingly
+- An account at https://larger.io     take a look at **detectTech.py** and config api_key accordingly
 
  
 
@@ -53,7 +53,7 @@ python 17iGT
 
 ### Clarification
 
-This toolkit is only for study purpose, all the features are implemented with free resources on the Internet.
+This toolkit is only for study purpose, all the features are implemented using free resources on the Internet.
 
 Any suggestions would be much appreciate.
 
