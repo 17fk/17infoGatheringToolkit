@@ -36,7 +36,7 @@ def menu():
 ''' )
 
 
-def dog(choice):
+def iGTentry(choice):
     banner()
     while True:
         menu()
@@ -47,6 +47,6 @@ def dog(choice):
 
 
 try:
-    dog(choice)
+    iGTentry(choice)
 except KeyboardInterrupt:
         quit('')
