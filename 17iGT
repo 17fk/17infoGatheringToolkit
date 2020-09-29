@@ -7,6 +7,8 @@ from core.iGT import iGT
 
 choice = 0
 
+if sys.version_info < (3, 0):
+    input = raw_input
 
 def banner():
     print ('''
@@ -39,7 +41,11 @@ def iGTentry(choice):
         menu()
         result = False
         choice = input('~: ')
+        if not choice in set(['1','2','3','4','5','6','7']):
+           print("Invalid input, exiting now")
+           break
         iGT(choice)
+        input('Press any key to continue')
         banner()
 
 

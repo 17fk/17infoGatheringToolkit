@@ -69,4 +69,4 @@ def iGT(choice):
             plugin = database[choice][0]
             plugin(validatedInp)
         else:
-            print (' Invalid input type')
+            print (' Invalid input, press any key to go back')
