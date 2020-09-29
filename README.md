@@ -40,10 +40,13 @@
 
 ### Usage
 
-```bash
+```shell
 git clone https://github.com/17fk/17infoGatheringTools.git
 
 cd 17infoGatheringTools
+
+#pip3 install -r requirements.txt
+pip install -r requirements.txt
 
 #python3 17iGT
 python 17iGT
