@@ -15,7 +15,7 @@
  '----------------' #  '---------------' # '----------------' # '----------------' # '----------------' #
 ```
 
-![PyPI - License](https://img.shields.io/pypi/l/req)
+![License](https://img.shields.io/pypi/l/req)![Release](https://img.shields.io/badge/release-0.1.0-green)
 
 
 
