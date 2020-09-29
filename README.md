@@ -15,7 +15,7 @@
  '----------------' #  '---------------' # '----------------' # '----------------' # '----------------' #
 ```
 
-![APM](https://img.shields.io/apm/l/vim-mode)
+![PyPI - License](https://img.shields.io/pypi/l/req)
 
 
 
