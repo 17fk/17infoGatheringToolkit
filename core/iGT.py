@@ -55,20 +55,11 @@ def validate(inp, typ):
 
 
 def iGT(choice):
-    if choice == '0':
-        inp = getInput('all')
-        for func in list(database.values()):
-            try:
-                func[0](inp)
-                print (red + ('-' * 60) + end)
-            except:
-                pass
+    typ = database[choice][1]
+    inp = getInput(typ)
+    validatedInp = validate(inp, typ)
+    if validatedInp:
+        plugin = database[choice][0]
+        plugin(validatedInp)
     else:
-        typ = database[choice][1]
-        inp = getInput(typ)
-        validatedInp = validate(inp, typ)
-        if validatedInp:
-            plugin = database[choice][0]
-            plugin(validatedInp)
-        else:
-            print (' Invalid input, press any key to go back')
+        print (' Invalid input, press any key to go back')
