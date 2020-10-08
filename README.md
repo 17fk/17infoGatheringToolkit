@@ -36,7 +36,7 @@
 - IP reverse lookup
 - Whois lookup
 - Web technologies detection
-- Scan sensitive information/file leaks in a website/uDork v2.0
+- Scan sensitive information/file leaks in a website/uDork v2.0  (not working in China)
 
 
 
