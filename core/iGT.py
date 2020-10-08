@@ -10,6 +10,7 @@ from plugins.detectTech import detectTech
 from plugins.honeypot import honeypot
 from plugins.censys import censys
 from plugins.reverseLookup import reverseLookup
+from plugins.sensitiveInfoScan import sensitiveInfoScan
 
 database = {
     '1': [censys, 'ip'],
@@ -18,7 +19,8 @@ database = {
     '4': [whois, 'domip'],
     '5': [honeypot, 'ip'],
     '6': [reverseLookup, 'ip'],
-    '7': [detectTech, 'url']
+    '7': [detectTech, 'url'],
+    '8': [sensitiveInfoScan, 'domain and arguments']
 }
 
 if sys.version_info < (3, 0):
