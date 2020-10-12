@@ -1,0 +1,12 @@
+[mail]
+host : smtp.qq.com
+port : 465
+mails : 490751746@qq.com
+from : GSIL
+password : galxxtyojcopcafa
+to : 490751746@qq.com
+cc : 490751746@qq.com
+
+[github]
+clone : false
+tokens : 48452dd9d898b387f758381ad3afe71926bca3f3

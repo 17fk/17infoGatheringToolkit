@@ -1,4 +1,5 @@
 import re
+import os
 import sys
 import requests
 
@@ -11,6 +12,8 @@ from plugins.honeypot import honeypot
 from plugins.censys import censys
 from plugins.reverseLookup import reverseLookup
 from plugins.sensitiveInfoScan import sensitiveInfoScan
+from plugins.gsil import *
+# from plugins.gsil import gsilentry
 
 database = {
     '1': [censys, 'ip'],
@@ -21,6 +24,7 @@ database = {
     '6': [reverseLookup, 'ip'],
     '7': [detectTech, 'url'],
     '8': [sensitiveInfoScan, 'domain and arguments']
+    # '9': [gsil, 'domain and arguments']
 }
 
 if sys.version_info < (3, 0):
@@ -55,11 +59,16 @@ def validate(inp, typ):
 
 
 def iGT(choice):
-    typ = database[choice][1]
-    inp = getInput(typ)
-    validatedInp = validate(inp, typ)
-    if validatedInp:
-        plugin = database[choice][0]
-        plugin(validatedInp)
+    if choice == '9':
+        inp = getInput("please enter rule name:")
+        str = ('python plugins/gsil/gsil.py ' + inp)
+        result1 = os.system(str)
     else:
-        print (' Invalid input, press any key to go back')
+        typ = database[choice][1]
+        inp = getInput(typ)
+        validatedInp = validate(inp, typ)
+        if validatedInp:
+            plugin = database[choice][0]
+            plugin(validatedInp)
+        else:
+            print (' Invalid input type, press any key to go back')
